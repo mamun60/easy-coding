@@ -1,0 +1,240 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    transition: all .5s;
+    scroll-behavior: smooth;
+    background: #F2F2F2;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.6rem;
+}
+ol,
+ul{
+    list-style-type: none;
+}
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:#A91D14;
+    --white-color:#fff;
+    --black-color:#000;
+    --gray-color:#7B7B7B;
+}
+.btn_pri{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--white-color);
+    background: var(--primary-color);
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* header code start */
+nav{
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    height: 80px;
+}
+.logo{
+    width: 250px;
+    padding: 20px 0;
+}
+.logo a{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo span{
+    color: var(--primary-color);
+}
+nav ul{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    padding: 0 20px;
+    display: inline-block;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: var(--primary-color);
+    transition: all .3s linear;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+/* baneer area */
+.banner_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 70px 0;
+    position: relative;
+}
+
+.banner_header h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--black-color);
+    padding: 25px 0;
+}
+.banner_header p{
+    color: var(--gray-color);
+    font-size: 1.3rem;
+}
+/* service code start */
+#service{
+    background: #20272E;
+    position: relative;
+}
+.service_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.service_content::before{
+    position: absolute;
+    content: '';
+    top: -55px;
+    left: 0;
+    width: 45px;
+    height: 120px;
+    background: var(--primary-color);
+}
+.service_content::after {
+    content: '';
+    top: 23px;
+    left: 3px;
+    background: url(images/dots.png);
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+}
+.service_list ul li{
+    display: flex;
+    align-items: center;
+}
+.service_list ul li{
+    margin-top: 15px;
+}
+.service_list p{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+/* testimonial part code*/
+#testemonial_area{
+    background: var(--primary-color);
+    padding: 8%;
+}
+.testemonial_content {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+}
+.single_testemonial{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+}
+.single_testemonial img {
+    margin-top: -90px;
+}
+
+.single_testemonial p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white-color);
+}
+.single_testemonial span{
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--white-color);
+    margin-top: 15px;
+    display: inline-block;
+}
+/* contact part code */
+#contact{
+    padding: 40px 0;
+}
+.contact_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.contact_head input,textarea {
+    display: block;
+    border: none;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    width: 100%;
+    border-radius: 12px;
+}
+form .gray, ::placeholder{
+    color: #AEAEAE;
+    font-size: 1.6rem;
+}
+.contact_head .btn_pri {
+    padding: 15px 40px;
+    cursor: pointer;
+}
+.contact_head h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--black-color);
+}
+input[type="submit"]{
+    width: unset;
+}
+/* footer part code */
+footer{
+    background: var(--black-color);
+    padding: 15px 0;
+}
+footer p{
+    color: var(--white-color);
+    font-size: 1.6rem;
+    text-align: center;
+
+}

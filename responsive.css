@@ -1,0 +1,84 @@
+@media only screen and (max-width:1230px){
+    .service_content::after{
+        display: none;
+    }
+    .service_content::before{
+        display: none;
+    }
+}
+@media only screen and (max-width:1024px){
+    /* testemonial */
+    .single_testemonial p{
+        font-size: 1.4rem;
+    }
+    /* contace part */
+    .contact_content{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contact_head input,textarea{
+        column-width: 200px;
+    }
+}
+@media only screen and (max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+    nav ul li{
+        margin-bottom: 15px;
+    }
+    /* service area */
+    .service_list p{
+        font-size: 1.2rem;
+    }
+    .service_content{
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    /* testemonial */
+    .testemonial_content{
+        grid-template-columns: 1fr;
+    }
+    .single_testemonial p{
+        font-size: 1.6rem;
+    }
+    /* testemonial */
+    .single_testemonial img{
+        display: none;
+    }
+    /* map area */
+    .contact_map{
+        display: none;
+    }
+    .contact_content{
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width:425px){
+    /* banner area */
+    .banner_content{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    .banner_header h1{
+        font-size: 3.2rem;
+    }
+    .banner_header{
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (max-width:425px){
+    .single_testemonial p{
+        font-size: 1.2rem;
+    }
+}
